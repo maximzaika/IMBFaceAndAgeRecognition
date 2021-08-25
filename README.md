@@ -1,0 +1,2 @@
+# IMBFaceAndAgeRecognition
+IBM VisualRecognition has been depreciated by IBM. Backend server that clients can connect to and upload imagesthat contain person's face. The server then sends it to IBM cloud to do the processing work to identify number of people, their age, and then send the X,Y coordiates back, where backend Highlights the face and states their age. Then it sends another request to create text-to-speech audio file. All this is then visual to a client.
