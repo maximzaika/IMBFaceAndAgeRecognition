@@ -1,0 +1,23 @@
+{
+  "name": "coding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Maxim Sanjay",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.1.0",
+    "socket.io-stream": "^0.9.1",
+    "socketio-file-upload": "^0.6.0",
+    "watson-developer-cloud": "^3.4.1",
+    "empty-folder": "^2.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1"
+  }
+}

@@ -1,0 +1,74 @@
+/** completed by Sanjay Sekar Samuel & Maxim Zaika
+    contains all the HTML style (CSS) related data */
+
+.center { /*used for centering the table */
+	margin: 0 auto;
+}
+
+p.one { /* aligns p to center */
+  text-align: center;
+}
+
+#playStopAudio { /* adds the style to the play button */
+ background-image: url(../icons/audio-icon.png);
+ background-color: transparent;
+ padding-bottom: 28px;
+ padding-right: 24px;
+ cursor: pointer;
+}
+
+#imageAnalysis-area { /* adds the style to the Image Analsis div */
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  width: 480px;
+  font-family: sans-serif;
+  margin: auto;
+  padding: 20px;
+}
+/* The Drag and Drop CSS has been retrieved from:
+   https://www.smashingmagazine.com/2018/01/drag-drop-file-uploader-vanilla-js/ */
+#drop-area {
+  border: 2px dashed #ccc;
+  border-radius: 20px;
+  width: 480px;
+  font-family: sans-serif;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+#drop-area.highlight {
+  border-color: purple;
+}
+p {
+  margin-top: 0;
+}
+.my-form {
+  margin-bottom: 10px;
+}
+
+#gallery {
+  margin-top: 10px;
+}
+
+#gallery img {
+  width: 150px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.button {
+  display: inline-block;
+  padding: 10px;
+  background: #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.button:hover {
+  background: #ddd;
+}
+
+#upload_input {
+  display: none;
+}
+/* Drag and Drop Ends here */

@@ -1,0 +1,72 @@
+<!-- Completed by Sanjay Sekar Samuel & Maxim Zaika
+     Client / User has access to this file whenever the server is active.
+     In order to access it, user needs to type "localhost:3000" in their
+     browser window.  -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Facial Image Analyser</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <!-- All the required scripts for running the client's HTML website -->
+  <script src = "/js/jquery-1.11.1.js"></script>
+  <script src = "/socket.io/socket.io.js"></script>
+  <script src = "/siofu/client.js"></script>
+
+  <body>
+    <b><p class="one" style="font-size:35px">Facial Image Analyser</p></b>
+
+    <!-- The Drop Box area, where users can drop their files that needs to be
+         uploaded, or click "Select the file" button to select the file from their
+         explorer -->
+    <div id="drop-area">
+      <form class="my-form">
+        <p>Upload multiple files with the file dialog or by dragging and dropping images onto the dashed region</p>
+        <input type="file" id="upload_input">
+        <label class="button" for="upload_input">Select the file</label>
+        <audio id="audioPlayer"><source src="" type="audio/wav">
+          Browser does not support the audio element.</audio>
+      </form>
+    </div>
+
+    <!-- Analysis of the image gets displayed right after user uploads the file.
+         Audio button appears, which allows users to play/stop text to audio
+         conversion. In this case, uploaded image and the image with detected
+         faces gets displayed as well -->
+    <div id="imageAnalysis-area">
+      <form class="my-form">
+        <table>
+          <td><b><p>Image Analysis</p></b></td>
+          <td style="padding-left:320px"><button type="button" id="playStopAudio"></button></td>
+        </table>
+
+        <p id="personData"></p>
+
+        <table class = "center">
+          <td><img id="usersImage" src="" width="220" height="300" alt = "">
+          <p class="one" id="imageData"></p></td>
+          <td><canvas id="myCanvas" width="220" height="300">
+            Your browser does not support the HTML5 canvas tag.</canvas>
+          <p class="one" id="canvasData"></p></td>
+        </table>
+      </form>
+    </div>
+
+    <script src = "/js/dragNdrop_Upload.js"></script>
+    <script src = "/js/Classes/observer.js"></script>
+    <script src = "/js/Classes/clientListen.js"></script>
+    <script src = "/js/Classes/updateWebsite.js"></script>
+    <script src = "/js/client.js"></script>
+  <!-- the following script disabes the Drop-area div box, which gets reenabled
+       whenever the data is received -->
+  <script>
+    var x = document.getElementById("imageAnalysis-area"); // hides the Image Analysis
+    if (x.style.display != "none") {
+        x.style.display = "none";
+    }
+  </script>
+  </body>
+
+</html>

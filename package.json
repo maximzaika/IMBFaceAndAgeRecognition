@@ -1,0 +1,19 @@
+{
+  "name": "coding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maxim Sanjay",
+  "license": "ISC",
+  "dependencies": {
+    "empty-folder": "^2.0.1",
+    "express": "^4.16.3",
+    "socket.io": "^2.1.0",
+    "socket.io-stream": "^0.9.1",
+    "socketio-file-upload": "^0.6.0",
+    "watson-developer-cloud": "^3.4.1"
+  }
+}
