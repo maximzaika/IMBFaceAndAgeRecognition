@@ -25,6 +25,11 @@ In this project, server takes as input an image which is uploaded by a client th
 - Server displays the original image, and the image with rectangular shape around each face
 - Server displays the play/stop audio button
 
+## Languages & Libraries
+
+- Languages: HTML, CSS, JavaScript 
+- ExpressJS, SocketIO, SocketIO-Stream, SocketIO-File-Upload, Watson-Developer-Cloud
+
 ## Class Diagram
 
 ![img.png](classDiagram.png)
